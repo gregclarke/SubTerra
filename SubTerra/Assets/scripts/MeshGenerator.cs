@@ -106,6 +106,7 @@ public class MeshGenerator : MonoBehaviour {
 
 		foreach (List<int> outline in outlines) {
 			EdgeCollider2D edgeCollider = gameObject.AddComponent<EdgeCollider2D>();
+			edgeCollider.isTrigger = true;
 			Vector2[] edgePoints = new Vector2[outline.Count];
 
 			for(int i = 0; i < outline.Count; i++) {
