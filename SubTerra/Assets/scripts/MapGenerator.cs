@@ -45,7 +45,7 @@ public class MapGenerator : MonoBehaviour {
 
 		ProcessMap ();
 
-		int[,] borderedMap = new int[width + borderSize * 2, height + borderSize * 2];
+		int[,] borderedMap = new int[width, height + borderSize * 2];
 				
 		for (int x = 0; x < borderedMap.GetLength(0); x++) {
 			for (int y = 0; y < borderedMap.GetLength(1); y++) {
